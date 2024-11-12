@@ -1,7 +1,7 @@
 import moment from 'moment';
 import { NextRequest } from 'next/server';
 import { config } from '~/app/config';
-import { students } from '~/app/data/students';
+import { students } from '~/app/api/mood/students';
 export const revalidate = 1200;
 
 const fetchMoodsByDate = async (startDate: string, endDate: string) => {

@@ -2,7 +2,7 @@ import moment from 'moment';
 import { NextRequest } from 'next/server';
 import { config } from '~/app/config';
 import { students } from '~/app/api/mood/students';
-export const revalidate = 1200;
+export const revalidate = 60;
 
 const fetchMoodsByDate = async (startDate: string, endDate: string) => {
   const URL = `https://staging-api-health2023.agileteknik.com/api/agileteknik/moods/niko-calendar?start_date=${startDate}&end_date=${endDate}`;
